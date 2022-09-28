@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    background-image: linear-gradient(to right,#c5401f,#741764);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+
+.container{
+    min-height: 450px;
+    width: 450px;
+    position: relative;
+}
+
+section{
+    min-height: 450px;
+    width: 450px;
+    background: rgba(255, 255,255, 0.25);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255,255, 0.35);
+    border-right: 1px solid rgba(255, 255,255, 0.15);
+    border-bottom: 1px solid rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+}
+
+.circle1 , .circle2{
+    background: rgba(255,255,255, 0.15);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: -70px;
+    right: -70px;
+}
+.circle2{
+    bottom: -70px;
+    left: -70px;
+}
+
+.title{
+    width: 1000%;
+}
+.title h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.75;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+}
+form{
+    padding: 1px;
+}
+
+form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+form .input-box input{
+    width: 100%;
+    background: rgba(255, 255, 255,0.15);
+    border: 1px solid rgba(255, 255, 255,0.15);
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+form .input-box input[type="submit"]{
+    background: rgba(255, 255, 255,0.6);
+    font-weight: 700;
+    color: #812913;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+form .link-text{
+    color:rgba(0, 0, 0, 1);
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+form .link-text a{
+    text-decoration: none;
+    color:rgba(26, 44, 73, 0.966);
+    font-weight: 700;
+}
